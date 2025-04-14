@@ -2,40 +2,93 @@
 <html>
 <head>
   <title>Register</title>
+<style>
+  body{
+    background-image:url("images/nature2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100vh;
+  }
+  .form-container *{
+    text-decoration: none;
+    margin: 10px;
+  }
+  .form-container{
+    background-color: rgba(255, 255, 255, 0.0);
+    background-size: cover;
+    margin: auto;
+    backdrop-filter:blur(10px);
+    width: 40%;
+    padding: 20px 8px 14px 8px;
+    text-align:left;
+    color:#ffffff;
+    border-radius:5px;
+    margin-top:10px;
+    background-attachment:fixed;
+    
+  }
+  h1{
+    text-align:center;
+    color: #ffffff;
+  }
+  .box, .box1, textarea{
+    width: 95%;
+    padding: 3px;
+    margin: 3px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #fff;
+    color: #ffffff;
+  }
+  .btn {
+    color: #000000;
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto 0;
+    text-align: center;
+    display: block;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
-  <h1 style="text-align:center;">Nick Vujicic Blog</h1>
-  <div style="width: 400px; margin: auto;">
-    <form action="login.html" method="post">
-      <label><strong>Name:</strong></label><br>
-      <input type="text" required><br><br>
+  <h1>Register</h1>
+  <div>
+    <form action="login.html" method="post" class="form-container">
+      <label><strong>Name:</strong></label>
+      <input type="text" class="box" required><br><br>
 
-      <label><strong>Email:</strong></label><br>
-      <input type="email" required><br><br>
+      <label><strong>Email:</strong></label>
+      <input type="email" class="box" required><br><br>
 
-      <label><strong>Password:</strong></label><br>
-      <input type="password" required><br><br>
+      <label><strong>Password:</strong></label>
+      <input type="password" class="box" required><br><br>
 
-      <label><strong>Confirm Password:</strong></label><br>
-      <input type="password" required><br><br>
+      <label><strong>Confirm Password:</strong></label>
+      <input type="password" class="box1" required><br><br>
 
-      <label><strong>Mobile No:</strong></label><br>
-      <input type="tel" required><br><br>
+      <label><strong>Mobile No:</strong></label>
+      <input type="tel" class="box" required><br><br>
 
-      <label><strong>Date of Birth:</strong></label><br>
-      <input type="date" required><br><br>
+      <label><strong>Date of Birth:</strong></label>
+      <input type="date" class="box" required><br><br>
 
-      <label><strong>Gender</strong></label><br>
+      <label><strong>Gender:</strong></label>
       <input type="radio" id="male" name="gender" value="Male">
       <label for="male">Male</label>
   
       <input type="radio" id="female" name="gender" value="Female">
       <label for="female">Female</label><br><br>
 
-      <label><strong>Address:</strong></label><br>
-      <textarea rows="3" cols="35" required></textarea><br><br>
+      <label><strong>Address:</strong></label>
+      <textarea rows="2" cols="35" class="box" required></textarea><br><br>
 
-      <input type="submit" value="Submit">
+      <button type="submit" class="btn">Submit</button>
     </form>
   </div>
 </body>

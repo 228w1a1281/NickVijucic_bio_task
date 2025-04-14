@@ -1,33 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nick Vujicic Gallery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("images/nature3.jpg");
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 1.5rem;
+      text-align: center;
+      color: #f2ff3b;
+    }
+
+    p {
+      text-align: center;
+      color:#f2ff3b;
+      margin-bottom: 2rem;
+    }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .gallery img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .gallery img:nth-child(1),
+  .gallery img:nth-child(4),
+  .gallery img:nth-child(10),
+  .gallery img:nth-child(14),
+  .gallery img:nth-child(18),
+  .gallery img:nth-child(19) {
+    width: 400px;
+  }
+</style>
+
+
+  </style>
 </head>
 <body>
-    <h2 id="gallery">Gallery</h2>
+
+  <header>
+    <h1>Nick Vujicic Blog</h1>
+  </header>
+
+  <h2 id="gallery">Gallery</h2>
   <p>Below are glimpses of Nick Vujicic’s life journey:</p>
-      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjM6PjQrbmod1e0gDj3Vb_n-AFftNjbboAg&s" width="20%" height="20%"></td>
-      <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Nick_Vujicic_speaking_in_a_church_in_Ehringshausen%2C_Germany_-_20110401-02.jpg/800px-Nick_Vujicic_speaking_in_a_church_in_Ehringshausen%2C_Germany_-_20110401-02.jpg" width="20%" height="20%"></td>
-      <td><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/119850/images/8j66ap7lQ4K7Y6aZ4WmQ_VUJICIC.png" width="20%" height="20%"></td>
-      <td><img src="https://etm7vbebw8m.exactdn.com/wp-content/uploads/2023/10/Article-Image-Nick-Vujisic.png.jpeg?strip=all&lossy=1&ssl=1" width="20%" height="20%"></td>
-      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHqJ0G7_rmcr8g54Lwv45u_GJZum_giC6-A&s" width="20%" height="20%"></td>
-      <td><img src="https://pbs.twimg.com/media/F5SGTejaYAE06tQ.png" width="20%" height="20%"></td>
-      <td><img src="https://yaytoday.com.au/wp-content/uploads/2024/02/The-inspiring-journey-of-Nick-Vujicic.webp" width="20%" height="20%"></td>
-      <td><img src="https://images.yourstory.com/cs/wordpress/2016/05/yourstory-Nick-Vujicic.jpg?fm=png&auto=format&blur=500" width="20%" height="20%"></td>
-      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0A3Fs7FCVKNy7zBVPwN-6VyG_rbtybjvGA&s" width="20%" height="20%"></td>
-      <td><img src="https://almadinaaljadida.com/wp-content/uploads/2019/07/web-men-akwalihem-1.jpg" width="20%" height="20%"></td>
-      <td><img src="https://i.pinimg.com/736x/2a/97/58/2a9758d82d6f68f809b3be86964df1be.jpg" width="20%" height="20%"></td>
-      <td><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/358dd27e-3553-449b-bd09-e67623969cd3/d7j5zd1-0e88c163-b075-45d5-8c97-971da8fb3184.png/v1/fill/w_606,h_808,q_80,strp/nick_vujicic_by_dhe_art_d7j5zd1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODA4IiwicGF0aCI6IlwvZlwvMzU4ZGQyN2UtMzU1My00NDliLWJkMDktZTY3NjIzOTY5Y2QzXC9kN2o1emQxLTBlODhjMTYzLWIwNzUtNDVkNS04Yzk3LTk3MWRhOGZiMzE4NC5wbmciLCJ3aWR0aCI6Ijw9NjA2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.HzwEKoDfKbWBMvlSbefyqq1qggYwzlc3fnyIGaq1vVM" width="20%" height="20%"></td>
-      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw63wD2Dz7XlXsDnxlMb_kWGMh9XcluPORrw&s" width="20%" height="20%"></td>
-      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5WXaOok5_ZOOVqbE7wcahbMRxZGyvwOkXOA&s" width="20%" height="20%"></td>
-      <td><img src="https://etm7vbebw8m.exactdn.com/wp-content/uploads/2023/10/Article-Image-Nick-Vujisic.png.jpeg?strip=all&lossy=1&ssl=1" width="20%" height="20%"></td>
-      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHqJ0G7_rmcr8g54Lwv45u_GJZum_giC6-A&s" width="20%" height="20%"></td>
-      <td><img src="https://pbs.twimg.com/media/F5SGTejaYAE06tQ.png" width="20%" height="20%"></td>
-      <td><img src="https://yaytoday.com.au/wp-content/uploads/2024/02/The-inspiring-journey-of-Nick-Vujicic.webp" width="20%" height="20%"></td>
-      <td><img src="https://images.yourstory.com/cs/wordpress/2016/05/yourstory-Nick-Vujicic.jpg?fm=png&auto=format&blur=500" width="20%" height="20%"></td>
-      <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW0A3Fs7FCVKNy7zBVPwN-6VyG_rbtybjvGA&s" width="20%" height="20%"></td>
-      <td><img src="https://almadinaaljadida.com/wp-content/uploads/2019/07/web-men-akwalihem-1.jpg" width="20%" height="20%"></td>
-      <td><img src="https://i.pinimg.com/736x/2a/97/58/2a9758d82d6f68f809b3be86964df1be.jpg" width="20%" height="20%"></td>
+
+  <div class="gallery">
+    <!-- Image placeholders 1 to 20 -->
+    <img src="images/1.jpeg" alt="Nick 1">
+    <img src="images/2.jpeg" alt="Nick 2">
+    <img src="images/3.jpg" alt="Nick 3">
+    <img src="images/4.jpg" alt="Nick 4">
+    <img src="images/5.jpeg" alt="Nick 5">
+    <img src="images/6.jpg" alt="Nick 6">
+    <img src="images/7.jpeg" alt="Nick 7">
+    <img src="images/8.jpg" alt="Nick 8">
+    <img src="images/9.jpg" alt="Nick 9">
+    <img src="images/10.jpeg" alt="Nick 10">
+    <img src="images/11.jpg" alt="Nick 11">
+    <img src="images/12.png" alt="Nick 12">
+    <img src="images/13.jpg" alt="Nick 13">
+    <img src="images/14.jpeg" alt="Nick 14">
+    <img src="images/15.jpg" alt="Nick 15">
+    <img src="images/16.jpg" alt="Nick 16">
+    <img src="images/17.jpg" alt="Nick 17">
+    <img src="images/18.jpeg" alt="Nick 18">
+    <img src="images/19.jpeg" alt="Nick 19">
+    <img src="images/20.jpeg" alt="Nick 20">
+  </div>
+
+</body>
 </html>
